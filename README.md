@@ -1,6 +1,6 @@
-FELIPE
+# FELIPE
 
-Front End Ligature Interpolating PHP Envelope
+## Front End Ligature Interpolating PHP Envelope
 
 Provides a very simple and just good enough base for prototyping PHP applications.
 
