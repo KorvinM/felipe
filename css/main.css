@@ -8,6 +8,7 @@
 
    *, *:before, *:after {
   box-sizing: border-box;
+  }
 
    html {
     color: #111;
