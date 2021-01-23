@@ -1,7 +1,5 @@
-/*! FELIPE - adapted from HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
-
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -11,13 +9,13 @@
   }
 
    html {
-    color: #111;
+    color: #d7d7d7;
     font-size: 16px;
     font-size: 1rem;
 }
 
    p {
-     line-height: 1.38;
+     line-height: 1.4;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -47,8 +45,8 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
+    border-top: 1px solid #444;
+    margin: 1em 6.2em;
     padding: 0;
 }
 
@@ -97,24 +95,332 @@ textarea {
 }
 
 
-
-
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+/* skeleton */
+body{
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0 0.62em;
+  background: rgb(19,19,19);}
+
+header.main-header{
+  font-size: 1.4em;
+  position:fixed;
+  width: 94%;
+  z-index:1;
+  top:0;
+  height: 2.4em;
+  padding-bottom: 0.4em;
+  background-color: rgba(38,28,38,0.6);
+  box-shadow: 0 0.4em 1em 0.32em rgba(42,42,52,0.5);}
+
+main{margin-top: 3em}
+
+footer.main-footer{
+  line-height: 1.4;
+  margin: 3.8em auto 0;
+  border-radius: 1em 1em 0.2em 0.2em;
+  width:94%;
+  padding:1em;
+  background: #1f1f1f;}
+
+/* type and body*/
+h1,h2,h3,h4{
+  font-weight: 600;
+	letter-spacing: 1.62px;}
+
+h3{font-size: 1.099em; margin-bottom:0;}
+
+article header h1{color:#eef;}
+
+.article-content h2, .article-content h3, p.center{text-align:center}
+.article-content p{font-size: 1.24em;}
+
+.article-content.intro p{
+  font-size: 1.5em;
+  width:88%;
+  margin:0 auto;
+  text-align: left;}
+
+.article-content{margin-top: 1.62em;}
+
+.column-wrap{width:100%;display:inline-block;}
+.c-svg{}
+.col{columns: 3 33em;}
+
+div.small{
+  font-size: 0.82em;
+  width: 94%;
+  margin-left:2.4em;
+  margin-top: 1em;
+}
+
+p.small{font-size: 1.06em}
+span.small{font-size: 0.93em}
+/*links */
+
+code{
+  color: #ccc;
+  font-size: 0.94em;
+}
+
+
+/*links*/
+a{
+  color:#b6b0ee;
+  text-decoration: none;
+  border: 0;
+  transition: all 1.4s;
+}
+
+a:hover{color: #99556a;}
+code a{color: #99a}
+
+.main-heading a{
+  text-shadow: 2px 2px 6px #9f1722;
+  color: #d0cdd1;
+}
+
+.main-heading a:hover{
+  color:whitesmoke;
+  text-shadow: 1px 1px 8px whitesmoke;
+  border: none;
+}
+
+footer.main-footer a{
+  padding: 0 0.38em;
+  border: 1px solid grey;
+  border-radius: 0.38em;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.game {
+  border-radius: 46%;
+  padding: 0 0.6em;
+	/* color: black; */
+	background: #061a09;
+  box-shadow: 8px 8px 22px #3e3b29;
+}
+/*slick slide buttons*/
+button{
+  border: none;
+  box-shadow: 1px 1px 4px #621722;
+  background: rgba(40,33,48, 0.8);
+  border-radius: 0.14em;
+  color: #d0cdd1;
+  cursor:pointer;
+  z-index: 2;
+  width: 100px;
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
+}
+
+#goTop{
+  opacity:0;
+    transition: opacity 0.4s linear;
+}
+#goTop.is-visible {
+   opacity:1;
+ }
+.slick-arrow{
+  position:fixed;
+    z-index: 2;
+    top:2.6em;
+    padding: 4px;
+}
+.slick-prev.slick-arrow{
+  left: 42%;
+}
+.slick-next.slick-arrow{
+  left: 69%;
+}
+.slick-slider, .slick-list {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+.slick-list.draggable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 
 
+/* Media Queries for Responsive Design */
+
+@media only screen and (min-width: 25em) {
 
 
+  .main-heading-wrap{
 
+  }
+  article{
+  }
 
+}
 
+@media only screen and (min-width: 42em) {
 
+  body{font-size: 1.16em;
+  }
+  header.main-header{
+    padding: 0 1em;
 
+  }
+  main {margin-top: 2.4em}
 
+  article>header{
+    display:flex;
+    justify-content:flex-end;
+  }
 
+  .grid-wrap{
+    display:grid;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 0.6em;}
+
+  .q-grid{
+    grid-template-columns: 24% 76%;
+
+    }
+
+  .slick-prev.slick-arrow{
+      left: 75%;
+  }
+
+  .slick-next.slick-arrow{
+      left: 88%;
+   /* position:absolute;
+    top: 6em;
+    left: 6em;*/
+  }
+  .color-picker div{
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  article>header{
+    justify-content:center;
+  }
+  footer.main-footer {
+    width: 62%;
+    margin-top: 1em;}
+}
+
+@media only screen and (min-width: 88em) {
+  .litebrite{
+    width: 80%;
+    margin: -4.5em auto 0;
+  }
+}
+/* litebrite */
+.litebrite{
+  padding: 0 1em;
+  border: 13px #623820 ridge;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+  text-align: center;
+}
+.row{}
+.box {
+  background-color: #1f1f1f;
+  height: 1.6vw;
+  width: 2vw;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 0.1vw;
+}
+
+.color-picker {
+  width: 99%;
+  margin: 0 auto 1em;
+  height: 10vw;
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  color: white;
+}
+
+.color-picker div{
+  display: flex;
+  background-color: black;
+  height: 4vw;
+  width: 16vw;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2em;
+  font-size: 1em;
+  font-weight: bold;
+	cursor: pointer;}
+
+.cyan {
+  background-color: #1ebacc;
+  color: #1ebacc;
+}
+
+.yellow {
+  background-color: #ffea4e;
+  color: #ffea4e;
+}
+
+.magenta {
+  background-color: #ff2f9e;
+  color: #ff2f9e;
+}
+
+.select-color {
+  border-top: 0.4vw solid #2d2d2d;
+}
+
+.select-color.cyan {
+  margin: 0 3vw;
+  border-bottom: 1vw solid #1ebacc;
+}
+
+.select-color.yellow {
+  border-bottom: 1vw solid #ffea4e;
+}
+
+.select-color.magenta {
+   margin: 0 3vw;
+   border-bottom: 1vw solid #ff2f9e;
+}
+
+.not-selected{
+  color: #878987;
+  border-bottom: 1vw solid #2D2D2D !important;
+}
+
+.toggle-blink {
+  margin-left: auto;
+  color: white;
+  font-weight: bold;
+  border-radius: 0;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 0.4vw dotted white !important;
+  font-size: 2.75vw;
+}
+
+.opacity {
+  opacity: 1 !important;
+}
+
+.blink {
+  opacity: 0.7;
+}
 
 
 
@@ -122,13 +428,21 @@ textarea {
    Helper classes
    ========================================================================== */
 
+.flx{display:flex;  align-items: center;
+     justify-content: space-around;
+   }
+
+.flxcol{
+
+   }
 /*
  * Hide visually and from screen readers
  */
-
  .hidden {
   display: none !important;
 }
+
+.hide{display: none;}
 
 /*
 * Hide only visually, but have it available for screen readers:
@@ -198,7 +512,7 @@ textarea {
   clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -216,7 +530,7 @@ textarea {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -292,5 +606,3 @@ textarea {
         page-break-after: avoid;
     }
 }
-
-
